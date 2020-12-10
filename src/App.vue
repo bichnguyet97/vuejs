@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+      hello
     <app-header @selectChoice="updateParent"></app-header>
     <app-content v-if="isChoice === 'SUN'"  ></app-content>
     <app-vote v-else-if="isChoice === 'Vote' && currentCompA === 0" v-on:selectClose="getComp "></app-vote>
